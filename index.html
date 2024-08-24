@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Image Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="position">
+        <h1>Dynamic Image Gallery<h1/>
+        <input type="text" id="search-bar" placeholder="Search images...">
+        <div class="filter-buttons">
+          <button onclick="filterImages('all')">All</button>
+          <button onclick="filterImages('nature')">Nature</button>
+          <button onclick="filterImages('animals')">Animals</button>
+          <button onclick="filterImages('technology')">Technology</button>
+        </div></div>
+    
+  </header>
+  
+  <div class="gallery" id="gallery">
+    <!-- Image items -->
+    <div class="gallery-item nature">
+      <img src="./imgs/Nature/nature-1.jpg" alt="Beautiful Water Fall " onclick="openLightbox(this)">
+      <p>Beautiful Water Fall  </p>
+    </div>
+    <div class="gallery-item nature">
+        <img src="./imgs/Nature/nature-2.jpg" alt="Beautiful Leak View" onclick="openLightbox(this)">
+        <p>Beautiful Leak View</p>
+      </div>
+      <div class="gallery-item nature">
+        <img src="./imgs/Nature/nature-3.jpg" alt="Water Fall in two Mountain's" onclick="openLightbox(this)">
+        <p>Water Fall in two Mountain's </p>
+      </div>
+      <div class="gallery-item nature">
+        <img src="./imgs/Nature/nature-4.jpg" alt="Leak View in two Mountain" onclick="openLightbox(this)">
+        <p>Leak View in two Mountain</p>
+      </div>
+      <div class="gallery-item nature">
+        <img src="./imgs/Nature/nature-5.jpg" alt="Awesome Water Fall View" onclick="openLightbox(this)">
+        <p> Awesome Water Fall View</p>
+      </div>
+      <div class="gallery-item nature">
+        <img src="./imgs/Nature/nature-6.jpg" alt="Awesome Water Fall View" onclick="openLightbox(this)">
+        <p>Awesome Water Fall View</p>
+      </div>
+    <div class="gallery-item animals">
+      <img src="./imgs/Animals/animal-1.jpg" alt="Animal Image 1" onclick="openLightbox(this)">
+      <p>Tiger Pose </p>
+    </div>
+    <div class="gallery-item animals">
+        <img src="./imgs/Animals/animal-2.jpg" alt="Animal Image 1" onclick="openLightbox(this)">
+        <p>Lion walking Alone</p>
+      </div>
+      <div class="gallery-item animals">
+        <img src="./imgs/Animals/animal-3.jpg" alt="Animal Image 1" onclick="openLightbox(this)">
+        <p>Elefent in the jungle</p>
+      </div>
+      <div class="gallery-item animals">
+        <img src="./imgs/Animals/animal-4.jpg" alt="Animal Image 1" onclick="openLightbox(this)">
+        <p>Tiger walk in greece</p>
+      </div>
+      <div class="gallery-item animals">
+        <img src="./imgs/Animals/animal-5.jpg" alt="Animal Image 1" onclick="openLightbox(this)">
+        <p>Shark in The sea</p>
+      </div>
+      <div class="gallery-item animals">
+        <img src="./imgs/Animals/animal-7.jpg" alt="Animal Image 1" onclick="openLightbox(this)">
+        <p>Zabra eating Food</p>
+      </div>
+      <div class="gallery-item technology">
+        <img src="./imgs/Technology/technology-1.jpg" alt="Technology Image 1" onclick="openLightbox(this)">
+        <p>Software Bulid Coding </p>
+      </div>
+      <div class="gallery-item technology">
+        <img src="./imgs/Technology/technolgy-2.jpg" alt="Technology Image 2" onclick="openLightbox(this)">
+        <p>Women work with Computer</p>
+      </div>
+      <div class="gallery-item technology">
+        <img src="./imgs/Technology/technolgy-3.jpg" alt="Technology Image 3" onclick="openLightbox(this)">
+        <p>Laptops on Table</p>
+      </div>
+      <div class="gallery-item technology">
+        <img src="./imgs/Technology/technology-4.jpg" alt="Technology Image 4" onclick="openLightbox(this)">
+        <p>Website Coding</p>
+      </div>
+      <div class="gallery-item technology">
+        <img src="./imgs/Technology/technology-5.jpg" alt="Technology Image 5" onclick="openLightbox(this)">
+        <p>Laptop Image with Coding</p>
+      </div>
+      <div class="gallery-item technology">
+        <img src="./imgs/Technology/technology-6.jpg" alt="Technology Image 6" onclick="openLightbox(this)">
+        <p>AI Human Brain</p>
+        
+      </div>
+      
+    <!-- Add more images as needed -->
+  </div>
+
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="">
+  </div>
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2024 Dynamic Image Gallery. All rights reserved.</p>
+      <div class="social-media">
+        <a href="#" target="_blank"><img src="./imgs/facebook.png" alt="Facebook"></a>
+        <a href="#" target="_blank"><img src="./imgs/linkedin.png" alt="linkedin"></a>
+        <a href="#" target="_blank"><img src="./imgs/instagram.png" alt="Instagram"></a>
+      </div>
+    </div>
+  </footer>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>

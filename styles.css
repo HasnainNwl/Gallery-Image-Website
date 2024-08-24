@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  header {
+    text-align: center;
+    padding: 20px;
+    background-image: url(./imgs/Nature/nature-6.jpg);
+    height: 80vh;
+    }
+    .position{
+        position: relative;
+        top: 30%;
+    }
+  #search-bar {
+    margin: 10px;
+    padding: 10px;
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  .filter-buttons {
+    margin: 10px;
+  }
+  
+  .filter-buttons button {
+    padding: 10px;
+    margin: 20px;
+    cursor: pointer;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 20px;
+  }
+  
+  .gallery-item {
+    position: relative;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  p{
+    Font-size:20px;
+  }
+  
+  .lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+  }
+  
+  @media (max-width: 600px) {
+    .gallery {
+      grid-template-columns: 1fr;
+    }
+  }
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-content p {
+    margin: 10px 0;
+  }
+  
+  .social-media {
+    margin: 10px 0;
+  }
+  
+  .social-media a {
+    margin: 0 10px;
+  }
+  
+  .social-media img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  @media (max-width: 600px) {
+    .footer-content {
+      padding: 0 20px;
+    }
+  
+    .social-media a {
+      margin: 0 5px;
+    }
+  }
+  
+  
